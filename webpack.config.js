@@ -52,6 +52,18 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(html)$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              limit: 51200,
+              name: '../html/[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
